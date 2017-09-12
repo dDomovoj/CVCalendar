@@ -9,7 +9,7 @@
 import UIKit
 
 public final class CVCalendarMonthContentViewController: CVCalendarContentViewController, CVCalendarContentPresentationCoordinator {
-    fileprivate var monthViews: [Identifier : MonthView]
+    public var monthViews: [Identifier : MonthView]
 
     public override init(calendarView: CalendarView, frame: CGRect) {
         monthViews = [Identifier : MonthView]()
