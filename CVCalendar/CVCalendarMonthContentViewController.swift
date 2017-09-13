@@ -144,7 +144,7 @@ public final class CVCalendarMonthContentViewController: CVCalendarContentViewCo
             let calendar = self.calendarView.delegate?.calendar?() ?? Calendar.current
 
             if dayView.date.day > 20 {
-                let presentedDate = dayView.monthView.date
+                let presentedDate = dayView.date.convertedDate() ?? dayView.monthView.date
                 calendarView.presentedDate = CVDate(date: self.dateBeforeDate(presentedDate!), calendar: calendar)
                 presentPreviousView(dayView)
             } else {

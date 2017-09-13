@@ -84,7 +84,7 @@ extension CVCalendarMonthView {
             self.weeksIn = calendarManager?.weeksWithWeekdaysForMonthDate(self.date).weeksIn
             self.weeksOut = calendarManager?.weeksWithWeekdaysForMonthDate(self.date).weeksOut
             self.currentDay = Manager.dateRange(Foundation.Date(), calendar: calendar).day
-            }, collapsingOnNil: true, withObjects: date as AnyObject?)
+        }, collapsingOnNil: true, withObjects: date as AnyObject?)
     }
 }
 
@@ -127,7 +127,7 @@ extension CVCalendarMonthView {
 
                 self.addSubview(weekView)
             }
-            }, collapsingOnNil: true, withObjects: numberOfWeeks as AnyObject?)
+        }, collapsingOnNil: true, withObjects: numberOfWeeks as AnyObject?)
     }
 }
 
@@ -158,7 +158,6 @@ extension CVCalendarMonthView {
                     self.addSubview(self.interactiveView)
                 }
             }
-
             }, collapsingOnNil: false, withObjects: calendarView)
     }
 

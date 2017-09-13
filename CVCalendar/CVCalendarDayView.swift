@@ -288,7 +288,7 @@ extension CVCalendarDayView {
         if let delegate = calendarView.delegate {
             if let shouldShow = delegate.dotMarker?(shouldShowOnDayView: self) , shouldShow {
                 
-                var (width, height): (CGFloat, CGFloat) = (13, 13)
+                var (width, height): (CGFloat, CGFloat) = (18, 18)
                 if let size = delegate.dotMarker?(sizeOnDayView: self) {
                     (width, height) = (size, size)
                 }
@@ -543,7 +543,7 @@ extension CVCalendarDayView {
         selectionView!.setNeedsDisplay()
         insertSubview(selectionView!, at: 0)
         
-        moveDotMarkerBack(false, coloring: false)
+//      moveDotMarkerBack(false, coloring: false)
     }
     
     public func setDeselectedWithClearing(_ clearing: Bool) {
