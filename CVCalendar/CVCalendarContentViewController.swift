@@ -84,7 +84,7 @@ extension CVCalendarContentViewController {
             scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .centerY, relatedBy: .equal, toItem: scrollView, attribute: .centerY, multiplier: 1.0, constant: 0.0))
             scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .width, relatedBy: .equal, toItem: scrollView, attribute: .width, multiplier: 0.0, constant: 1.0))
             scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .height, relatedBy: .equal, toItem: scrollView, attribute: .height, multiplier: 0.5, constant: 0.0))
-            scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .left, relatedBy: .equal, toItem: scrollView, attribute: .left, multiplier: 1.0, constant: frame.size.width * 2))
+            scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .left, relatedBy: .equal, toItem: scrollView, attribute: .left, multiplier: 1.0, constant: frame.size.width * 2 - 1))
         }
 
         calendarView.isHidden = false
