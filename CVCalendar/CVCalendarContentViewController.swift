@@ -70,20 +70,20 @@ extension CVCalendarContentViewController {
             scrollView.contentSize = CGSize(width: frame.size.width * 3, height: frame.size.height)
 
             let lseparator = UIView()
-            lseparator.backgroundColor = UIColor.gray
+            lseparator.backgroundColor = UIColor.init(white: 0.8, alpha: 1.0)
             lseparator.translatesAutoresizingMaskIntoConstraints = false
             scrollView.addSubview(lseparator)
             let rseparator = UIView()
-            rseparator.backgroundColor = UIColor.gray
+            rseparator.backgroundColor = UIColor.init(white: 0.8, alpha: 1.0)
             rseparator.translatesAutoresizingMaskIntoConstraints = false
             scrollView.addSubview(rseparator)
             scrollView.addConstraint(NSLayoutConstraint(item: lseparator, attribute: .centerY, relatedBy: .equal, toItem: scrollView, attribute: .centerY, multiplier: 1.0, constant: 0.0))
             scrollView.addConstraint(NSLayoutConstraint(item: lseparator, attribute: .width, relatedBy: .equal, toItem: scrollView, attribute: .width, multiplier: 0.0, constant: 1.0))
-            scrollView.addConstraint(NSLayoutConstraint(item: lseparator, attribute: .height, relatedBy: .equal, toItem: scrollView, attribute: .height, multiplier: 0.5, constant: 0.0))
+            scrollView.addConstraint(NSLayoutConstraint(item: lseparator, attribute: .height, relatedBy: .equal, toItem: scrollView, attribute: .height, multiplier: 0.8, constant: 0.0))
             scrollView.addConstraint(NSLayoutConstraint(item: lseparator, attribute: .left, relatedBy: .equal, toItem: scrollView, attribute: .left, multiplier: 1.0, constant: frame.size.width))
             scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .centerY, relatedBy: .equal, toItem: scrollView, attribute: .centerY, multiplier: 1.0, constant: 0.0))
             scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .width, relatedBy: .equal, toItem: scrollView, attribute: .width, multiplier: 0.0, constant: 1.0))
-            scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .height, relatedBy: .equal, toItem: scrollView, attribute: .height, multiplier: 0.5, constant: 0.0))
+            scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .height, relatedBy: .equal, toItem: scrollView, attribute: .height, multiplier: 0.8, constant: 0.0))
             scrollView.addConstraint(NSLayoutConstraint(item: rseparator, attribute: .left, relatedBy: .equal, toItem: scrollView, attribute: .left, multiplier: 1.0, constant: frame.size.width * 2 - 1))
         }
 
